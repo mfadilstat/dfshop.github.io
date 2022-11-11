@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- icon css-->
+    <link rel="stylesheet" href="icon/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+
+    <title>DF Shop</title>
+
+</head>
+<body>
+    <header>
+        <div class="navbar-container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <!-- <i class="fas fa-film mr-2"></i> -->
+                        <i class="bi bi-cart2"></i>
+                        DF-Shop
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="nav-active-1" class="nav-link nav-link-1 active" aria-current="page" href="index.html" onclick="navMenu('#nav-active-1')">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav-active-2" class="nav-link nav-link-2" href="#diskon-link" onclick="navMenu('#nav-active-2')">Diskon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav-active-3" class="nav-link nav-link-3" href="#shop-link" onclick="navMenu('#nav-active-3')">Belanjan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav-active-4" class="nav-link nav-link-4" href="#search-link" onclick="navMenu('#nav-active-4')">Pencarian</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- menu diskon -->
+        <section>
+            <div class="slider-frame">
+                <div class="slider-images">
+                    <div class="img-container">
+                        <div class="img-content-discount">
+                            <h1>KUSUS HARI INI DISKON 50%</h1>
+                            <h2>+30%</h2>
+                        </div>  
+                        
+                        <div class="img-content">
+                            <img src="img/header/img-1.png" class="img-fluid" alt="Responsive image">
+                        </div>
+
+                    </div>
+        
+                    <div class="img-container">
+                        <div class="img-content-discount">    
+                            <h1>Beli 1 dapat:</h1>
+                            <h2>2</h2>
+                        </div>
+
+                        <div class="img-content">
+                            <img src="img/header/img-2.png" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-content-discount">   
+                            <h1>Diskon:</h1>
+                            <h2>80%</h2>
+                        </div>
+                        
+                        <div class="img-content">
+                            <img src="img/header/img-3.png" class="img-fluid" alt="Responsive image">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- jombo images -->
+        <section id="diskon-link"> 
+            <div class="img-jombo" id="img-jombo-link">
+                <div class="row mb-4 img-jombo-title">
+                    <h2 class="col-12 tm-text-primary">Kusus untuk Anda</h2>
+                </div>
+                <div class="row tm-mb-90">
+
+                    <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
+                        <div class="jumbo-container">
+                            <img src="img/img-00.png" class="img-fluid img-jumbo">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12 product-container">
+                        <div class="tm-bg-gray tm-img-details">
+                            
+                            <div class="mb-8">
+                                <h3 class="tm-text-primary mb-2">Keterangan</h3>
+                                <p class="text-white info-product">Rin-ring adalah kucing kampung yang ditemukan di pinggir sawa, kemudian dirawat seperti anak sendiri.</p>
+
+                                <table class="text-white table-info">
+                                    <tr>
+                                        <td>Nama Product</td>
+                                        <td>:</td>
+                                        <td class="nama-product">Wikas Mahal</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Harga Product</td>
+                                        <td>:</td>
+                                        <td class="harga-product">Rp. 600.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Ready</td>
+                                        <td>:</td>
+                                        <td class="n-unit">10 unit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Berat Product</td>
+                                        <td>:</td>
+                                        <td class="size-product">2 kg </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="mb-2">
+                                <br><br>
+                                <samp class="tm-text-primary tx fn-sz-20">Keterangan Pengiriman:</samp>
+                                <p class="tx-justify fn-sz-14">
+                                    Untuk dalam area Provisi Sulawesi Selatan, pesanan akan tiba paling lambat tiga hari. Jika diluar Provisi Sulawesi Selatan, pesanan akan tiba paling lambat satu minggu setelah barang dipesan.
+                                </p>
+                            </div>
+
+                             <!-- Tombol Pesan -->
+                            <div class="text-center mb-3">
+                            <!-- Spinner Tombol -->
+                            <div class="spinner">
+                                <input type="button" class="prev" value="-">
+                                <input type="number" class="number-spinner" value=1>
+                                <input type="button" class="next" value="+">
+                            </div>
+
+                            <div class="text-center mb-5 cont-buy">
+                                <input type="button" class="btn-buy" value="pesan">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- search menu -->
+        <section id="search-link">
+            <div class="search-content tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll">
+                <form class="d-flex tm-search-form">
+                    <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success tm-search-btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        
+
+        <!-- menu shop -->
+        <section id="shop-link">
+            <div class="container-fluid tm-container-content tm-mt-60">
+                <div class="row mb-4">
+                    <h2 class="col-6 tm-text-primary">
+                        Pilihan yang tersedia:
+                    </h2>
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <form action="" class="tm-text-primary">
+                            Page <input type="text" value="1" size="1" class="tm-input-paging tm-text-primary"> of 200
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="row tm-mb-90 tm-gallery">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 ">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-01.png" alt="Image" class="img-fluid">
+
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 1</h2>
+                                <a src="img/img-01.png" href="#img-jombo-link" onclick="get_pic('img/img-01.png',
+
+                                    // info product
+                                    'Muhammad Fadil 1',
+
+                                    //nama product
+                                    'wikas 1',
+
+                                    // harga
+                                    'Rp. 1.000.000',
+
+                                    // ready terjual
+                                    '1',
+
+                                    // berat barang
+                                    '1 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 100.000
+                            </span>
+                            <span>
+                                Ready: 1 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-02.png" alt="Image" class="img-fluid thumb">
+
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 2</h2>
+                                <a src="img/img-02.png" href="#img-jombo-link" onclick="get_pic('img/img-02.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 2',
+
+                                    //nama product
+                                    'wikas 2',
+
+                                    // harga
+                                    'Rp. 2.000.000',
+
+                                    // ready terjual
+                                    '2',
+
+                                    // berat barang
+                                    '2 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 200.000
+                            </span>
+                            <span>
+                                Ready: 2 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-03.png" alt="Image" class="img-fluid">
+
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 3</h2>
+                                    <a src="img/img-03.png" href="#img-jombo-link" onclick="get_pic('img/img-03.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 3',
+
+                                    //nama product
+                                    'wikas 3',
+
+                                    // harga
+                                    'Rp. 3.000.000',
+
+                                    // ready terjual
+                                    '3',
+
+                                    // berat barang
+                                    '3 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 300.000
+                            </span>
+                            <span>
+                                Ready: 3 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-04.png" alt="Image" class="img-fluid">
+
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 4</h2>
+                                <a src="img/img-04.png" href="#img-jombo-link" onclick="get_pic('img/img-04.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 4',
+
+                                    //nama product
+                                    'wikas 4',
+
+                                    // harga
+                                    'Rp. 4.000.000',
+
+                                    // ready terjual
+                                    '4',
+
+                                    // berat barang
+                                    '4 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 400.000
+                            </span>
+                            <span>
+                                Ready: 4 unit
+                            </span>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-05.png" alt="Image" class="img-fluid">
+
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 5</h2>
+                                <a src="img/img-05.png" href="#img-jombo-link" onclick="get_pic('img/img-05.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 5',
+
+                                    //nama product
+                                    'wikas 5',
+
+                                    // harga
+                                    'Rp. 5.000.000',
+
+                                    // ready terjual
+                                    '5',
+
+                                    // berat barang
+                                    '5 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 500.000
+                            </span>
+                            <span>
+                                Ready: 5 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-06.png" alt="Image" class="img-fluid">
+
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 6</h2>
+                                <a src="img/img-06.png" href="#img-jombo-link" onclick="get_pic('img/img-06.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 6',
+
+                                    //nama product
+                                    'wikas 6',
+
+                                    // harga
+                                    'Rp. 6.000.000',
+
+                                    // ready terjual
+                                    '6',
+
+                                    // berat barang
+                                    '6 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 600.000
+                            </span>
+                            <span>
+                                Ready: 6 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-07.png" alt="Image" class="img-fluid">
+
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 7</h2>
+                                <a src="img/img-07.png" href="#img-jombo-link" onclick="get_pic('img/img-07.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 7',
+
+                                    //nama product
+                                    'wikas 7',
+
+                                    // harga
+                                    'Rp. 7.000.000',
+
+                                    // ready terjual
+                                    '7',
+
+                                    // berat barang
+                                    '7 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 700.000
+                            </span>
+                            <span>
+                                Ready: 7 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-08.png" alt="Image" class="img-fluid">
+
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 8</h2>
+                                <a src="img/img-08.png" href="#img-jombo-link" onclick="get_pic('img/img-08.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 8',
+
+                                    //nama product
+                                    'wikas 8',
+
+                                    // harga
+                                    'Rp. 8.000.000',
+
+                                    // ready terjual
+                                    '8',
+
+                                    // berat barang
+                                    '8 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 800.000
+                            </span>
+                            <span>
+                                Ready: 8 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-09.png" alt="Image" class="img-fluid">
+                            
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 9</h2>
+                                <a src="img/img-09.png" href="#img-jombo-link" onclick="get_pic('img/img-09.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 9',
+
+                                    //nama product
+                                    'wikas 9',
+
+                                    // harga
+                                    'Rp. 9.000.000',
+
+                                    // ready terjual
+                                    '9',
+
+                                    // berat barang
+                                    '9 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 900.000
+                            </span>
+                            <span>
+                                Ready: 9 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-10.png" alt="Image" class="img-fluid">
+                            
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 10</h2>
+                                <a src="img/img-10.png" href="#img-jombo-link" onclick="get_pic('img/img-10.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 10',
+
+                                    //nama product
+                                    'wikas 10',
+
+                                    // harga
+                                    'Rp. 10.000.000',
+
+                                    // ready terjual
+                                    '10',
+
+                                    // berat barang
+                                    '10 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 1.000.000
+                            </span>
+                            <span>
+                                Ready: 10 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-11.png" alt="Image" class="img-fluid">
+                            
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 11</h2>
+                                <a src="img/img-11.png" href="#img-jombo-link" onclick="get_pic('img/img-11.png', 
+
+
+                                    // info product
+                                    'Muhammad Fadil 11',
+
+                                    //nama product
+                                    'wikas 11',
+
+                                    // harga
+                                    'Rp. 11.000.000',
+
+                                    // ready terjual
+                                    '11',
+
+                                    // berat barang
+                                    '11 kg'
+                                );">View more</a>
+                            </figcaption>
+                            
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 1.100.000
+                            </span>
+                            <span>
+                                Ready: 11 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-12.png" alt="Image" class="img-fluid">
+                            
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 12</h2>
+                                <a src="img/img-12.png" href="#img-jombo-link" onclick="get_pic('img/img-12.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 12',
+
+                                    //nama product
+                                    'wikas 12',
+
+                                    // harga
+                                    'Rp. 12.000.000',
+
+                                    // ready terjual
+                                    '12',
+
+                                    // berat barang
+                                    '12 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 1.200.000
+                            </span>
+                            <span>
+                                Ready: 12 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-13.png" alt="Image" class="img-fluid">
+                            
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 13</h2>
+                                <a src="img/img-13.png" href="#img-jombo-link" onclick="get_pic('img/img-13.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 13',
+
+                                    //nama product
+                                    'wikas 13',
+
+                                    // harga
+                                    'Rp. 13.000.000',
+
+                                    // ready terjual
+                                    '13',
+
+                                    // berat barang
+                                    '13 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 1.300.000
+                            </span>
+                            <span>
+                                Ready: 13 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-14.png" alt="Image" class="img-fluid">
+                            
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Prodcut 14</h2>
+                                <a src="img/img-14.png" href="#img-jombo-link" onclick="get_pic('img/img-14.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 14',
+
+                                    //nama product
+                                    'wikas 14',
+
+                                    // harga
+                                    'Rp. 14.000.000',
+
+                                    // ready terjual
+                                    '14',
+
+                                    // berat barang
+                                    '14 kg'
+                            );">View more</a>
+                            </figcaption>
+                            
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 1.400.000
+                            </span>
+                            <span>
+                                Ready: 14 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-15.png" alt="Image" class="img-fluid">
+
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 15</h2>
+                                <a src="img/img-15.png" href="#img-jombo-link" onclick="get_pic('img/img-15.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 15',
+
+                                    //nama product
+                                    'wikas 15',
+
+                                    // harga
+                                    'Rp. 15.000.000',
+
+                                    // ready terjual
+                                    '15',
+
+                                    // berat barang
+                                    '15 kg'
+                                );">View more</a>
+                            </figcaption>
+
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 1.500.000
+                            </span>
+                            <span>
+                                Ready: 15 unit
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                        <figure class="effect-ming tm-imgas-item">
+                            <img src="img/img-16.png" alt="Image" class="img-fluid">
+                            
+                            <figcaption class="d-flex align-items-center justify-content-center">
+                                <h2>Product 16</h2>
+                                <a src="img/img-16.png" href="#img-jombo-link" onclick="get_pic('img/img-16.png', 
+
+                                    // info product
+                                    'Muhammad Fadil 16',
+
+                                    //nama product
+                                    'wikas 16',
+
+                                    // harga
+                                    'Rp. 16.000.000',
+
+                                    // ready terjual
+                                    '16',
+
+                                    // berat barang
+                                    '16 kg'
+                                );">View more</a>
+                            </figcaption>
+                        </figure>
+
+                        <div class="d-flex justify-content-between tm-text-gray">
+                            <span class="tm-text-primary">
+                                Rp. 1.600.000
+                            </span>
+                            <span>
+                                Ready: 16 unit
+                            </span>
+                        </div>
+
+                    </div>         
+                </div> <!-- row -->
+
+                <div class="row tm-mb-90">
+                    <div class="col-12 d-flex justify-content-between align-items-center tm-paging-col">
+                        <a href="javascript:void(0);" class="btn btn-primary tm-btn-prev mb-2 disabled">Previous</a>
+                        <div class="tm-paging d-flex">
+                            <a href="javascript:void(0);" class="active tm-paging-link">1</a>
+                            <a href="javascript:void(0);" class="tm-paging-link">2</a>
+                            <a href="javascript:void(0);" class="tm-paging-link">3</a>
+                            <a href="javascript:void(0);" class="tm-paging-link">4</a>
+                        </div>
+                        <a href="javascript:void(0);" class="btn btn-primary tm-btn-next">Next Page</a>
+                    </div>            
+                </div>
+            </div> <!-- container-fluid, tm-container-content -->
+        </section>
+
+    </main>
+    
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">DF-Shop</h3>
+                    <ul>
+                        <li>Admin: Muhmammad Fadil</li>
+                        <li>Alamat: jln. btn asalmula Tamalanrea Makassar PK No.3</li>
+                        <li>whatsapp: +62 853-4096-0793</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
+                    <ul class="tm-footer-links pl-0">
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Our Company</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                        <li class="mb-2"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
+                    <a href="#" class="tm-text-gray text-right d-block mb-2">Terms of Use</a>
+                    <a href="#" class="tm-text-gray text-right d-block">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12 px-5 mb-3 text-dark">
+                    Copyright 2022 DF-Code.
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 px-5 text-dark">
+                    Designed by <a href="https://web.facebook.com/mfadil.stat/" class="tm-text-gray-dark" rel="sponsored" target="_blank">@Muhammad Fadil</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/plugins.js"></script>
+</body>
+</html>
